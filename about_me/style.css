@@ -7,5 +7,50 @@ p {
 }
 
 body {
-    background-color: lightgray;
+    background-color: #b2bfc5;
+}
+
+#navigation-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+li {
+    display: flex;
+    float: left;
+  }
+  
+li a {
+    display: flex;
+    color: white;
+    font-size: large;
+    padding: 30px 16px;
+    text-decoration: none;
+  }
+  
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #eeb192;
+  }
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px 4px;
+    width: 75px;
+    height: 75px;
+  }
+.title {
+  color: #808d9e;
+  font-size: large;
+  padding: .75%;
+  text-decoration: none;
 }

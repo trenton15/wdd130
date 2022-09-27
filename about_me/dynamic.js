@@ -1,4 +1,4 @@
-// Favorite Foods
+// Favorite Foods:
 const favoriteFoods = ["Seafood", " Cookies", " Ice-cream"];
 const foodList = document.createElement('p');
 foodList.textContent = `Favorite Foods: ${favoriteFoods}`;
@@ -8,7 +8,7 @@ foodList.textContent = `Favorite Foods2:  ${favoriteFoods}`;
 favoriteFoods.push(" Sandwiches");
 foodList.textContent = `Favorite Foods3:  ${favoriteFoods}`;
 
-// Todays Date
+// Todays Date:
 const weekday = [
     "Sunday",
     "Monday",

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo h1 {
+    text-align: left;
+    padding: 0em 0.5em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 0.5em;
+    padding: 0;
+    padding-bottom: 0.5em;
+    overflow: hidden;
+  }
+
+li {
+    display: flex;
+    float: left;
+    text-align: left;
+    padding: 0em 0.25em;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    max-width: 1080px;
+    min-width: none;
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Rock Salt', cursive, Impact, sans-serif;
+}
+
+p {
+    max-width: 70ch;
+}
+
+.banner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+}
+
+.mission h2 {
+    text-align: center;
+    padding: 0em 1em;
+}
+
+.mission p {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em 1em;
+}
+
+.end img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 97%;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5em;
+}

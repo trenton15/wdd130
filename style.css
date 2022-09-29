@@ -78,32 +78,3 @@ li a:hover {
 .white-background {
   background-color: white;  
 }
-
-/*ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  font-size: large;
-  text-align: center;
-  padding: 30px 20px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover {
-  background-color: #eeb192;
-}
-
-ul.topnav li.right {float: left;}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}*/

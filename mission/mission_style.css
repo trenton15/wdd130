@@ -1,0 +1,99 @@
+#navigation-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0em;
+    overflow: hidden;
+  }
+  
+li {
+    display: flex;
+    float: left;
+  }
+  
+li a {
+    display: flex;
+    color: #738a9c;
+    font-size: large;
+    margin: 0.75em 0em;
+    padding: 0.75em 0.5em;
+    text-decoration: none;
+  }
+
+li a:hover {
+    background-color: #eeb192;
+  }
+
+.nav-logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    width: 75px;
+    height: 75px;
+  }
+
+.nav-title {
+  color: #808d9e;
+  font-size: large;
+  padding: 0.5em;
+  text-decoration: none;
+}
+
+.content{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 19px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    margin: 0.25em 0em;
+}
+
+.title h2{
+    text-align: center;
+    color: #006EB6;
+    font-size: .8em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    border-bottom: 1px solid lightgray;
+    margin: 0;
+}
+
+.spacing{
+  margin-top: 2.5em;
+}
+.does-list {
+  list-style-type: none;
+  counter-reset: css-counter 0; /* initializes counter to 0; use -1 for zero-based numbering */
+}
+
+.does-list li {
+  padding: 0.5em 0em;
+  counter-increment: css-counter 1; /* Increase the counter by 1. */
+}
+
+.does-list li:before {
+  padding: 0em 0.25em;
+  content: counter(css-counter) "."; /* Apply counter before children's content. */
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    width: 150px;
+}

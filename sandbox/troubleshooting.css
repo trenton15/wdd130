@@ -8,7 +8,7 @@
 
 .logo h1 {
     text-align: left;
-    padding: 0em 0.5em;
+    padding: 0em 0.25em;
     margin-bottom: 0em;
     margin-top: 0em;
 }
@@ -16,7 +16,7 @@
 ul {
     list-style-type: none;
     margin: 0;
-    margin-left: 0.5em;
+    margin-left: 0.25em;
     padding: 0;
     padding-bottom: 0.5em;
     overflow: hidden;
@@ -49,15 +49,23 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 97%;
+    width: 98%;
+}
+
+.mission {
+    background-color: lightgray;
+    padding: 0.5em;
+    margin: 0.75em 0.35em;
 }
 
 .mission h2 {
     text-align: center;
-    padding: 0em 1em;
+    margin: 0;
+    padding: 0em 0.5em;
 }
 
 .mission p {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
     padding: 0em 1em;
@@ -67,7 +75,7 @@ p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 97%;
+    max-width: 98%;
 }
 
 footer {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,9 @@
       <link rel="stylesheet" href="/wdd130/mission/mission_style.css">
       <script src="/wdd130/mission/mission_dynamic.js" defer></script>
   </head>
+
   <body>
+
     <nav id="navigation-container">
       <a href="/wdd130/index.html"><img class="nav-logo" src="/wdd130/images/tm_logo2.png" alt="logo"></a>
       <p class="nav-title">WDD130 Web Projects</p>
@@ -20,20 +23,22 @@
         <li><a href="/wdd130/about_me/about_me.html">About Me</a></li>
       </ul>
     </nav>
-    
-    <label for="theme-select">Choose a Theme:</label>
 
+    <div class="theme">
+    <label for="theme-select">Choose a Theme:</label>
     <select name="theme" id="theme-select">
-      <option value="">--Select a Theme--</option>
-      <option value="Light Theme">Light Theme</option>
-      <option value="Dark Theme">Dark Theme</option>
+      <option value="Light">Light</option>
+      <option value="Dark">Dark</option>
     </select>
+    </div>
 
     <div class="content">
-    <header class="title">
+    
+      <header class="title">
       <h1>MISSION STATEMENT</h1>  
       <h2>BRIGHAM YOUNG UNIVERSITY-IDAHO</h2>
     </header>
+
     <main>
       <p class="spacing">Brigham Young University-Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.</p>
       <p><em>The university does this by:</em></p>
@@ -55,9 +60,11 @@
         </li>
       </ol>
     </main>
+
     <footer>
-    <img alt="BYUI logo" src="/wdd130/images/byui-logo_blue.jpg" class="logo">
+    <img id="imageid" class="logo" src="/wdd130/images/byui-logo_blue.jpg" alt="BYUI logo">
     </footer>
+
   </div>
   </body>
 </html>

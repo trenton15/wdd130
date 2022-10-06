@@ -100,9 +100,38 @@ li a:hover {
 
 .dark {
   background-color: #333;
-  color: white
+  color: whitesmoke
 }
 
 .dark h2 {
   color: #4F9ACF;
+}
+
+.theme {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.theme select{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.dark .theme select{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: whitesmoke;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.dark .theme option{
+  background-color: #333;
 }

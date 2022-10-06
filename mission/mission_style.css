@@ -97,3 +97,12 @@ li a:hover {
     padding-top: 1em;
     width: 150px;
 }
+
+.dark {
+  background-color: #333;
+  color: white
+}
+
+.dark h2 {
+  color: #4F9ACF;
+}

@@ -55,3 +55,11 @@ li a:hover {
   padding: .75%;
   text-decoration: none;
 }
+
+.main-nav {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-nav li a{
+  color: black;
+}

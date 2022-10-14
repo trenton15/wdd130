@@ -55,7 +55,7 @@ const articles = [
       const newArticle = document.createElement("article");
       const html = articleHTML(item);
       newArticle.innerHTML = html;
-      articlesElement.appendChild(newArticle);
+      /*articlesElement.appendChild(newArticle);*/
     });
   }
   

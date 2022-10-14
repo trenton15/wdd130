@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&display=swap');
 
 body{
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 1em;
+  font-family: Helvetica, Arial, sans-serif;
   max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
@@ -56,10 +57,54 @@ li a:hover {
   text-decoration: none;
 }
 
+h1 {
+  text-align: center;
+}
+
 .main-nav {
-  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  margin: 0 auto;
+  justify-content: end;
+  justify-items: center;
+  border-bottom: #eeb192 solid;
+  border-top: #eeb192 solid;
+  padding-right: 2em;
 }
 
 .main-nav li a{
-  color: black;
+  color: #ad1b40;
+  margin: 1em auto;
+  padding: 0.25em 1em 0.25em 1em;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 2em;
+  margin: auto;
+}
+
+h2 {
+  color: #ad1b40;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 2em;
+  justify-items: center;
+}
+
+article div img {
+  padding-left: 2em;
+}
+
+.filter {
+  text-align: center;
+}
+
+.link {
+  color:#ad1b40;
+  text-decoration: none;
 }

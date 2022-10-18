@@ -1,11 +1,14 @@
 // example 1
 const steps = ["one", "two", "three"];
 // callback declaration
-function makeList(item) {
-  const listElement = document.getElementById("myList");
-  listElement.innerHTML += `<li>${item}</li>`;
+function listItemTemplate(item) {
+  return `<li>${item}</li>`;
 }
-steps.forEach(makeList);
+
+const htmlStrings = steps.map(listItemTemplate);
+const listElement = document.querySelector('#myList');
+const html = htmlStrings.join("");
+listElement.innerHTML = html;
 
 // example 2
 // is the luckyNumber in the list?

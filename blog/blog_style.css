@@ -85,8 +85,9 @@ main {
   margin: auto;
 }
 
-h2 {
+h2 a{
   color: #ad1b40;
+  text-decoration: none;
 }
 
 article {

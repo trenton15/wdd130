@@ -9,7 +9,7 @@ const articles = [
       imgAlt: "Book cover for Septimus Heap 1",
       ages: "10-14",
       genre: "Fantasy",
-      stars: "****"
+      stars: "⭐⭐⭐"
     },
     {
       id: 2,
@@ -25,3 +25,32 @@ const articles = [
       stars: "⭐⭐⭐⭐"
     }
   ];
+
+  function articleTemplate(article) {
+    return `<section>
+    <article>
+        <div>
+            <p>${article.date}</p>
+            <p>${article.ages}</p>
+            <p>${article.genre}</p>
+            <p>${article.stars}</p>
+        </div>
+        <div>
+            <h2><a href="#">${article.title}</a></h2>
+            <img alt="${article.imgAlt}" src=${article.imgSrc}>
+            <p>${article.description}
+                <a class="link" href="#">Read More...</a>
+            </p>
+        </div>
+    </article>
+</section>`
+    //return `<li class="meal-card"><img src="${meal.imgSrc}"><h2>${meal.name}</h2><p class="meal-category">${meal.category}</p><p>PrepTime: ${meal.prepTime}</p><p>CookTime: ${meal.cookTime}</p></li>`
+  }
+  function renderArticles(){
+    const htmlArticles = articles.map(articleTemplate);
+    const newUl = document.createElement('ul');
+    newUl.classList.add('article-list');
+    newUl.insertAdjacentHTML('afterbegin', htmlArticles.join(''));
+    document.querySelector('main').insertAdjacentElement('beforeend', newUl);
+  }
+  renderArticles()

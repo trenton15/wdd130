@@ -67,6 +67,6 @@ const articles = [
     const newUl = document.createElement('ul');
     newUl.classList.add('article-list');
     newUl.insertAdjacentHTML('afterbegin', htmlArticles.join(''));
-    document.querySelector('main').insertAdjacentElement('beforeend', newUl);
+    document.querySelector('section').insertAdjacentElement('beforeend', newUl);
   }
   renderArticles()

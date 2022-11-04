@@ -1,3 +1,5 @@
+// import templates form Template.js
+import {participantTemplate, successTemplate} from "./Template.js";
 // ADD PARTICIPANT BUTTON
 // set the count variable
 let participantCount = 1;
@@ -10,47 +12,6 @@ function renderParticipant() {
     participantCount += 1
     const htmlParticipant = participantTemplate(participantCount);
     document.querySelector("#add").insertAdjacentHTML("beforebegin", htmlParticipant);
-}
-
-// Insert HTML into form
-function participantTemplate(participantCount) {
-    return `<section class="participant${participantCount}">
-    <p>Participant ${participantCount}</p>
-    <div class="item">
-      <label for="fname"> First Name<span>*</span></label>
-      <input id="fname" type="text" name="fname" value="" required="">
-    </div>
-    <div class="item activities">
-      <label for="activity">Activity #<span>*</span></label>
-      <input id="activity" type="text" name="activity">
-    </div>
-    <div class="item">
-      <label for="fee">Fee ($)<span>*</span></label>
-      <input id="fee" type="number" name="fee">
-    </div>
-    <div class="item">
-      <label for="date">Desired Date <span>*</span></label>
-      <input id="date" type="date" name="date">
-    </div>
-    <div class="item">
-      <p>Grade</p>
-      <select>
-        <option selected="" value="" disabled=""></option>
-        <option value="1">1st</option>
-        <option value="2">2nd</option>
-        <option value="3">3rd</option>
-        <option value="4">4th</option>
-        <option value="5">5th</option>
-        <option value="6">6th</option>
-        <option value="7">7th</option>
-        <option value="8">8th</option>
-        <option value="9">9th</option>
-        <option value="10">10th</option>
-        <option value="11">11th</option>
-        <option value="12">12th</option>
-      </select>
-    </div>
-  </section>`
 }
 
 // SUBMIT BUTTON
@@ -73,24 +34,19 @@ function submitForm(event) {
     renderSuccessTemplate(info)
 }
 
-// Calculate the tootal fee by summing each participant fee
+// Calculate the total fee by summing each participant fee
 function totalFees() {
     // the selector below lets us grab any element that has an id that begins with "fee"
     let feeElements = document.querySelectorAll("[id^=fee]");
-    console.log(feeElements);
     // querySelectorAll returns a NodeList. It's like an Array, but not exactly the same.
     // The line below is an easy way to convert something that is list-like to an actual Array so we can use all of the helpful Array methods...like reduce
     // The "..." is called the spread operator. It "spreads" apart the list, then the [] we wrapped it in inserts those list items into a new Array.
     feeElements = [...feeElements];
+    console.log(feeElements)
     // sum up all of the fees. Something like Array.reduce() could be very helpful here :) Or you could use a Array.forEach() as well.
-    sum = feeElements.reduce((total, item)=>total + parseFloat(item.value),0);
+    const sum = feeElements.reduce((total, item)=>total + parseFloat(item.value),0);
     // once you have your total make sure to return it!
     return sum;
-}
-
-// Build the success template to show the user
-function successTemplate (info) {
-    return`<p>Thank you ${info.adultName} for registering. You have registered ${info.numberOfParticipants} participants and owe $${info.feeTotal} in fees.</p>`
 }
 
 // Show the successTemplate

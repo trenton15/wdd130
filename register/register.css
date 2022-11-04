@@ -159,3 +159,13 @@
       width: 100%;
     }
   }
+
+  .participants {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  }
+
+  #add {
+    grid-column: 1/3;
+  }

@@ -42,7 +42,6 @@ function totalFees() {
     // The line below is an easy way to convert something that is list-like to an actual Array so we can use all of the helpful Array methods...like reduce
     // The "..." is called the spread operator. It "spreads" apart the list, then the [] we wrapped it in inserts those list items into a new Array.
     feeElements = [...feeElements];
-    console.log(feeElements)
     // sum up all of the fees. Something like Array.reduce() could be very helpful here :) Or you could use a Array.forEach() as well.
     const sum = feeElements.reduce((total, item)=>total + parseFloat(item.value),0);
     // once you have your total make sure to return it!

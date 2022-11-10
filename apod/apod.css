@@ -15,6 +15,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, h2, h3 {
@@ -26,6 +29,8 @@ h1, h2, h3 {
 h1 {
     text-align: center;
     color: var(--lilac);
+    border-bottom: solid var(--dark-blue);
+    border-width: 2px;
 }
 
 p {
@@ -58,7 +63,7 @@ p {
 .photo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1em;
+    column-gap: 2em;
 }
 
 .photo img {
@@ -77,8 +82,36 @@ p {
     width: 100%;
     grid-column: 1/4;
     margin-bottom: 1em;
+    align-self: center;
+    justify-self: center;
+}
+
+.search label {
+    padding-left: 1em;
 }
 
 .search .submit {
     display: inline-block;
+    width: 12em;
+    height: 2.5em;
+    font-size: 14px;
+    background-color: var(--lilac);
+    color: var(--platinum);
+    border: none;
+}
+
+.search input {
+    width: 12em;
+    height: 2em;
+    font-size: 14px;
+}
+
+footer {
+    border-top: solid var(--dark-blue);
+    border-width: 2px;
+}
+
+footer p {
+    font-size: 12px;
+    display: inline;
 }

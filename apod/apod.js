@@ -1,8 +1,8 @@
 // Where to pull from
-const baseUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+const apodUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 
 // Use the URL to fetch the current picture of the day
-async function getPic(url) {
+async function getApod(url) {
     // Get response from url
     const response = await fetch(url);
     // If ready, pull as json
@@ -34,4 +34,4 @@ function renderTemplate(data) {
     element.innerHTML = html;
 }
 
-getPic(baseUrl);
+getApod(apodUrl);

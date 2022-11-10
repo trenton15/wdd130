@@ -25,11 +25,17 @@
 </head>
 <body>
     <header>
-        <h1>NASA Astronomy Picture of the Day (APOD)</h1>
+        <h1>🪐 NASA Astronomy Picture of the Day (APOD)</h1>
     </header>
     <main>
-        <section class="search"></section>
-        <section class="error"></section>
+        <section class="search">
+            <p>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date" />
+            </p>
+            <button class="submit" type="submit">Get Image</button>
+        </section>
+        <section class="error hide">Alert Message!</section>
         <section id="pod"></section>
     </main>
     <footer>

@@ -1,11 +1,18 @@
-const apodUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+// Where to pull from
+const baseUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
 
 // Use the URL to fetch the current picture of the day
-async function getApod(apodUrl) {
-    const response = fetch(apodUrl)
-    console.log(response)
+async function getPic(url) {
+    // Get response from url
+    const response = await fetch(url);
+    // If ready, pull as json
+    if (response.ok) {
+        const data = await response.json();
+        renderTemplate(data);
+    }
 }
 
+// Create html photoTemplate
 function photoTemplate(photo) {
     return `<section class="photo">
         <img src=${photo.url} alt="${photo.title}">
@@ -17,4 +24,14 @@ function photoTemplate(photo) {
     </section>`;
 }
 
-getApod(apodUrl);
+// Insert information into html using photoTemplate
+function renderTemplate(data) {
+    // Get element
+    const element = document.querySelector('#pod');
+    // Build html string
+    const html = photoTemplate(data)
+    // Insert html into element
+    element.innerHTML = html;
+}
+
+getPic(baseUrl);

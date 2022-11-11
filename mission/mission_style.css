@@ -135,3 +135,13 @@ li a:hover {
 .dark .theme option{
   background-color: #333;
 }
+
+@media screen and (max-width:900px){
+  #navigation-container {
+    display: block;
+    padding-left: 2.5em;
+  }
+  .nav-title {
+    display: inline;
+  }
+}

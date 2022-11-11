@@ -92,11 +92,12 @@ p {
 
 .search .submit {
     display: inline-block;
-    width: 12em;
-    height: 2.5em;
-    font-size: 14px;
+    width: 11em;
+    height: 2em;
+    font-size: 16px;
     background-color: var(--lilac);
     color: var(--platinum);
+    font-weight: 600;
     border: none;
 }
 
@@ -104,6 +105,7 @@ p {
     width: 12em;
     height: 2em;
     font-size: 14px;
+    text-align: center;
 }
 
 footer {
@@ -114,4 +116,26 @@ footer {
 footer p {
     font-size: 12px;
     display: inline;
+}
+
+.sat {
+    max-width: 10%;
+    padding-right: 0.25em;
+    align-self: end;
+}
+
+@media screen and (max-width:900px){
+    body {
+        padding: 1em;
+    }
+    .photo {
+        display: block;
+    }
+    .search {
+        display: block;
+    }
+    .search .submit {
+        margin-top: 1em;
+        margin-left: 1em;
+    }
 }

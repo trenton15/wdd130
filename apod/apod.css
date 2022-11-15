@@ -92,7 +92,7 @@ p {
 
 .search .submit {
     display: inline-block;
-    width: 11em;
+    width: 8em;
     height: 2em;
     font-size: 16px;
     background-color: var(--lilac);

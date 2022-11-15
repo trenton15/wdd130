@@ -6,13 +6,13 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #C98686;
-  --secondary-color: #450920;
-  --accent1-color: #755bb4;
+  --primary-color: #D39C9C;
+  --secondary-color: #50514F;
+  --accent1-color: #E7CFB2;
   --accent2-color: #F6F6F6;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: 'Spectral SC', serif;
+  --heading-font: 'Roboto', sans-serif;
   --paragraph-font: 'Roboto', sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */

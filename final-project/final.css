@@ -3,9 +3,9 @@
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #D39C9C;
-  --secondary-color: #50514F;
-  --accent1-color: #E7CFB2;
+  --primary-color: #D3A873;
+  --secondary-color: #603140;
+  --accent1-color: #D076AB;
   --accent2-color: #F6F6F6;
 
   /* change the values below to your chosen font(s) */
@@ -26,6 +26,10 @@
   --nav-background-color: var(--secondary-color);
   --nav-hover-link-color: white;
   --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+  background-color: #F8F2F3;
 }
 
 head{
@@ -76,7 +80,13 @@ header a{
   width: 60%;
   grid-column: 2/3;
   justify-self: center;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+}
+
+main div {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -88,6 +98,9 @@ header a{
     }
     .logo img {
       width: 200%;
+    }
+    main div {
+      margin-top: 1em;
     }
 }
 

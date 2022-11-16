@@ -1,3 +1,17 @@
+// Render the header
+function headerTemplate() {
+    return `<a href="/wdd130/final-project/final.html" class="logo"><img src="/wdd130/images/salon_logo_long2.png" alt="jana's salon logo"></a>`
+}
+
+function renderHeader() {
+    // Get element
+    const element = document.querySelector('header');
+    // Build html string
+    const html = headerTemplate()
+    // Insert html into element
+    element.innerHTML = html;
+}
+
 // Render the navigation bar
 function navTemplate() {
     return `
@@ -46,3 +60,4 @@ function renderFooter() {
 
 renderNav();
 renderFooter();
+renderHeader();

@@ -114,8 +114,8 @@ main div {
       padding: 0.5em;
     }
     body {
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
     }
 }
 

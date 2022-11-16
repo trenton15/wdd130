@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Spectral+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spectral+SC&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #D39C9C;
+  --secondary-color: #50514F;
+  --accent1-color: #E7CFB2;
+  --accent2-color: #F6F6F6;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Roboto', sans-serif;
+  --paragraph-font: 'Roboto', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: var(
+    --primary-color
+  ); /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: var(
+    --primary-color
+  ); /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color);
+  --nav-link-color: var(--primary-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: var(--primary-color);
+}
+
+head{
+  margin: 0em;
+}
+
+/* Add a black background color to the top navigation */
+.nav {
+    background-color: var(--secondary-color);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  float: left;
+  display: block;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Add an active class to highlight the current page*/
+.nav a.active {
+  background-color: #D39C9C;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens*/
+.nav .icon {
+  display: none;
+}
+
+header a{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.logo img {
+  width: 60%;
+  grid-column: 2/3;
+  justify-self: center;
+  margin-bottom: 1em;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+    .logo img {
+      width: 200%;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes | Home</title>
+    <script src="quote.js" type="module"></script>
+    <style>
+        :root {
+            --primary-color: gray;
+            --accent-color: burlywood;
+        }
+        .quote {
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+            max-width: 66ch;
+        }
+        .quote span {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.5em;
+            color: var(--accent-color);
+        }
+        .quote .author {
+            text-align: right;
+        }
+        body section{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Quote of the Day</h1></header>
+    <section id="quoteContainer"></section>
+</body>
+</html>

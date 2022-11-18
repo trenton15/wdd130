@@ -146,21 +146,12 @@ footer {
     main div {
       margin-top: 1em;
     }
-    picture img {
-      width: 98%;
-      margin-top: 0.25em;
-      padding-left: 0.25em;
-      border-radius: 1em;
-    }
-    body {
-      margin-left: 0.5em;
-      margin-right: 0.5em;
-    }
     main {
       height: 100%;
     }
-    .nav {
-      border-radius: 1em;
+    picture img {
+      filter: blur(0px);
+      -webkit-filter: blur(0px);
     }
 }
 

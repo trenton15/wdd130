@@ -5,17 +5,18 @@ const apodUrl = "https://api.nasa.gov/planetary/apod?api_key=0UieBswOrvrViwGPhI6
 async function getApod(url) {
     // Get response from url
     const response = await fetch(url);
+    console.log(url);
+    const data = await response.json();
     // If ready, pull as json
     if (response.ok) {
         // success...make sure any previous error message is gone.
         hideError();
         //return the data
-        const data = await response.json();
         renderTemplate(data);
     }
     else {
         // error...output the message returned by the server
-        showError(Error)
+        showError(data.msg);
         // return false to show that something went wrong
         return false;
     }
@@ -52,25 +53,26 @@ function getApodByDate(apodUrl) {
 
 
 document.querySelector('.submit').addEventListener('click', function(e){
+    e.preventDefault()
     getApodByDate(apodUrl)
 });
 
 
 function showError(msg) {
     //get the error element
-    document.querySelector('.error');
+    const error = document.querySelector('.error');
     //set the content of the element to the msg
-    
+    error.innerHTML = msg
     // remove the hide class
-    classList.remove('.hide');
+    error.classList.remove('hide');
 }
 function hideError() {
     //get the error element
-    document.querySelector('.error');
+    const noError = document.querySelector('.error');
     // clear out the content of the element
-    
+    noError.innerHTML
     // add the hide class
-    classList.add('.hide');
+    noError.classList.add('hide');
 }
 
-getApod(apodUrl);
+window.addEventListener('load', getApod(apodUrl));

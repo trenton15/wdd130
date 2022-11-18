@@ -120,6 +120,9 @@ main div {
       margin-left: 0.5em;
       margin-right: 0.5em;
     }
+    .calendly-inline-widget {
+      overflow: hidden;
+    }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */

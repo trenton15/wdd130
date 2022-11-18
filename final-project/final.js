@@ -17,7 +17,7 @@ function navTemplate() {
     return `
     <div class="nav" id="topNav">
         <a href="/wdd130/final-project/final.html">Home</a>
-        <a href="/wdd130/final-project/schedule.html">Schedule</a>
+        <a href="/wdd130/final-project/schedule.html" class="schedule">Schedule</a>
         <a href="/wdd130/final-project/contact.html">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
             <i class="fa fa-bars"></i>

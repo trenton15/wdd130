@@ -28,12 +28,17 @@
   --nav-hover-background-color: var(--primary-color);
 }
 
+.no-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
   background-color: #F8F2F3;
+  margin: 0em;
 }
 
 head{
@@ -43,8 +48,8 @@ head{
 /* Add a black background color to the top navigation */
 .nav {
     background-color: var(--secondary-color);
-    border-radius: 1em;
     overflow: hidden;
+    font-family: 'Spectral SC', serif;
 }
 
 /* Style the links inside the navigation bar */
@@ -84,6 +89,7 @@ header a{
   width: 60%;
   grid-column: 2/3;
   justify-self: center;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
@@ -99,13 +105,13 @@ picture {
 
 picture img {
   width: 100%;
-  margin-top: 0.25em;
   filter: blur(2px);
   -webkit-filter: blur(2px);
 }
 
 main {
-  margin-top: 1em;
+  height: 100%;
+  margin-top: 0.25em;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
@@ -116,7 +122,16 @@ h1 {
   z-index: 1;
   justify-self: center;
   font-size: 2.5em;
+  font-family: 'Spectral SC', serif;
 }
+
+footer {
+  padding: 1em;
+}
+
+/*.nav a.schedule {
+  color: var(--accent2-color);
+}*/
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -133,12 +148,19 @@ h1 {
     }
     picture img {
       width: 98%;
-      margin-top: 1em;
+      margin-top: 0.25em;
       padding-left: 0.25em;
+      border-radius: 1em;
     }
     body {
       margin-left: 0.5em;
       margin-right: 0.5em;
+    }
+    main {
+      height: 100%;
+    }
+    .nav {
+      border-radius: 1em;
     }
 }
 
@@ -158,6 +180,9 @@ h1 {
 }
 
 @media screen and (min-width: 1000px) {
+  .schedule-nav {
+    margin-bottom: -1.5em;
+  }
   h1 {
     align-self: center;
   }

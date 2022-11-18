@@ -1,5 +1,5 @@
 // Where to pull from
-const apodUrl = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY";
+const apodUrl = "https://api.nasa.gov/planetary/apod?api_key=0UieBswOrvrViwGPhI6ypg1tdwR9iF8tKV6eT2yJ";
 
 // Use the URL to fetch the current picture of the day
 async function getApod(url) {
@@ -11,7 +11,6 @@ async function getApod(url) {
         hideError();
         //return the data
         const data = await response.json();
-        console.log(data);
         renderTemplate(data);
     }
     else {
@@ -47,32 +46,31 @@ function renderTemplate(data) {
 function getApodByDate(apodUrl) {
     // Get value from input
     const date = document.querySelector("#date").value;
-    console.log(date);
     // Append value from input to url
-    return apodUrl = apodUrl + `&date=${date.value}`;
+    getApod(apodUrl + `&date=${date}`);
 }
 
 
-const el = document.querySelector('submit');
-if(el){
-    el.addEventListener('click', getApodByDate);
-}
+document.querySelector('.submit').addEventListener('click', function(e){
+    getApodByDate(apodUrl)
+});
+
 
 function showError(msg) {
     //get the error element
-    document.querySelector('error');
+    document.querySelector('.error');
     //set the content of the element to the msg
     
     // remove the hide class
-    classList.remove('hide');
+    classList.remove('.hide');
 }
 function hideError() {
     //get the error element
-    document.querySelector('error');
+    document.querySelector('.error');
     // clear out the content of the element
     
     // add the hide class
-    classList.add('hide');
+    classList.add('.hide');
 }
 
 getApod(apodUrl);

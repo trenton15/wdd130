@@ -100,8 +100,8 @@ picture {
 picture img {
   width: 100%;
   margin-top: 1em;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 main {

@@ -28,6 +28,10 @@
   --nav-hover-background-color: var(--primary-color);
 }
 
+html, body, main {
+  height: 100%;
+}
+
 body {
   background-color: #F8F2F3;
 }
@@ -131,5 +135,11 @@ main div {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .schedule-nav {
+    margin-bottom: -3em;
   }
 }

@@ -28,7 +28,7 @@
   --nav-hover-background-color: var(--primary-color);
 }
 
-html, body, main {
+html, body {
   height: 100%;
 }
 
@@ -90,7 +90,6 @@ header a{
 main div {
   margin-right: auto;
   margin-left: auto;
-  width: 90%;
 }
 
 .banner {
@@ -140,6 +139,6 @@ main div {
 
 @media screen and (min-width: 1000px) {
   .schedule-nav {
-    margin-bottom: -3em;
+    margin-bottom: -1em;
   }
 }

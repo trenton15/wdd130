@@ -66,7 +66,7 @@ head{
 
 /* Add an active class to highlight the current page*/
 .nav a.active {
-  background-color: #D39C9C;
+  background-color: var(--primary-color);
   color: white;
 }
 
@@ -99,7 +99,7 @@ picture {
 
 picture img {
   width: 100%;
-  margin-top: 1em;
+  margin-top: 0.25em;
   filter: blur(2px);
   -webkit-filter: blur(2px);
 }
@@ -140,9 +140,6 @@ h1 {
       margin-left: 0.5em;
       margin-right: 0.5em;
     }
-    .calendly-inline-widget {
-      overflow: hidden;
-    }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -161,9 +158,6 @@ h1 {
 }
 
 @media screen and (min-width: 1000px) {
-  .schedule-nav {
-    margin-bottom: -1em;
-  }
   h1 {
     align-self: center;
   }

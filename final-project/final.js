@@ -32,6 +32,12 @@ function renderNav() {
     const html = navTemplate()
     // Insert html into element
     element.innerHTML = html;
+    const path = window.location.href; // Just grabbing a handy reference to it
+    document.querySelectorAll('a').forEach(function(link) {
+        if (link.href === path) {
+            link.classList.add('active'); // note the space
+        }
+    });
 }
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */

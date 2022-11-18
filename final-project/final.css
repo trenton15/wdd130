@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Spectral+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spectral+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Spectral+SC&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -122,7 +121,7 @@ h1 {
   z-index: 1;
   justify-self: center;
   font-size: 2.5em;
-  font-family: 'Spectral SC', serif;
+  font-family: Jost, sans-serif;
 }
 
 footer {

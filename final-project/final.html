@@ -13,7 +13,18 @@
     <header></header>
     <nav></nav>
     <main>
-        <img class="banner" src="/wdd130/images/banner_crop2.jpg" alt="people holding brushes and combs">
+        <h1>Welcome!</h1>
+        <picture class="banner">
+            <source 
+               media="(min-width: 601px)"
+               srcset="/wdd130/images/banner_crop2.jpg">
+            <source 
+               media="(max-width: 600px)"
+               srcset="/wdd130/images/banner_mobile.jpg">
+            <img src="/wdd130/images/banner_crop2.jpg" 
+            alt="salon tools">
+        </picture>
+        <!--<img class="banner" src="/wdd130/images/banner_crop2.jpg" alt="people holding brushes and combs">-->
     </main>
     <footer></footer>
 </body>

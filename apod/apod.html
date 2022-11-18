@@ -28,13 +28,13 @@
         <h1>🪐 NASA Astronomy Picture of the Day (APOD)</h1>
     </header>
     <main>
-        <section class="search">
+        <form class="search">
             <p>
                 <label for="date">Date</label>
-                <input type="date" name="date" id="date" />
+                <input type="text" id="date" placeholder="YYYY-MM-DD" name="date" />
                 <button class="submit" type="submit"> Get Image📡</button>
             </p>
-        </section>
+        </form>
         <section class="error hide">Alert Message!</section>
         <section id="pod"></section>
     </main>

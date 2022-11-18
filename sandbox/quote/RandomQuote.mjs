@@ -17,6 +17,7 @@ async function getQuote(url) {
     if(response.ok) {
         // convert to json
         const data = await response.json();
+        console.log(data);
         return data;
     }
  } catch (error) {

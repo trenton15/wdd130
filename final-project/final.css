@@ -126,11 +126,65 @@ h1 {
 
 footer {
   padding: 1em;
+  font-family: 'Jost', sans-serif;
+  font-size: large;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+  border-top: #878C8F solid;
 }
 
-/*.nav a.schedule {
-  color: var(--accent2-color);
-}*/
+footer img {
+  max-width: 10em;
+}
+
+footer p img {
+  max-width: 30px;
+}
+
+.phone {
+  justify-self: center;
+  align-self: center;
+}
+
+.email {
+  justify-self: center;
+  align-self: center;
+}
+
+.address {
+  justify-self: center;
+  align-self: center;
+}
+
+.insta-icon {
+  justify-self: end;
+  align-self: center;
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+
+.face-icon {
+  justify-self: start;
+  align-self: center;
+  grid-column: 6/7;
+  grid-row: 1/2;
+  margin-left: 1em;
+}
+
+.insta-icon img {
+  max-width: 70px;
+}
+
+.face-icon img {
+  max-width: 70px;
+}
+
+.copy-right {
+  grid-row: 1/2;
+  grid-column: 5/7;
+  text-align: center;
+  align-self: end;
+}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -151,6 +205,10 @@ footer {
     picture img {
       filter: blur(0px);
       -webkit-filter: blur(0px);
+    }
+    footer {
+      display: block;
+      text-align: center;
     }
 }
 

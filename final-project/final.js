@@ -57,8 +57,8 @@ function footerTemplate() {
     <P class="address"><img src="/wdd130/images/pin_icon.png"> 255 E Main St, Rexburg, ID</P>
     <p class="email"><img src="/wdd130/images/email_icon.png"> jana.salon@gmail.com</p>
     <p class="phone"><img src="/wdd130/images/phone_icon.png"> (555) 555-555</p>
-    <a href="/wdd130/final-project/final.html" class="insta-icon"> <img src="/wdd130/images/instagram_icon.png"></a>
-    <a href="/wdd130/final-project/final.html" class="face-icon"> <img src="/wdd130/images/facebook_icon.png"></a>
+    <a href="https://www.instagram.com/hair.by.murdock/" class="insta-icon"> <img src="/wdd130/images/instagram_icon.png"></a>
+    <a href="https://www.facebook.com/jana.hardy.77" class="face-icon"> <img src="/wdd130/images/facebook_icon.png"></a>
     <p class="copy-right">&copy2022 Trenton Murdock</p>`
 }
 

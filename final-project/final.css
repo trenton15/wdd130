@@ -295,6 +295,23 @@ footer p img {
   margin-bottom: 0em;
 }
 
+.contact-main {
+  background-color: rgba(135, 140, 143, 0.1);
+  display: block;
+  text-align: center;
+  margin-top: 0em;
+}
+
+.contact-logo {
+  width: 5%;
+  margin: 2em;
+}
+
+.contact-header {
+  font-size: 25px;
+  font-family: var(--paragraph-font);
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .nav a:not(:first-child) {display: none;}

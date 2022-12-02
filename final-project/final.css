@@ -44,6 +44,12 @@ head{
   margin: 0em;
 }
 
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 /* Add a black background color to the top navigation */
 .nav {
     background-color: var(--secondary-color);
@@ -104,12 +110,14 @@ picture {
 
 picture img {
   width: 100%;
+  height: 100%;
   filter: blur(0px);
   -webkit-filter: blur(0px);
+  margin-bottom: 3em;
 }
 
 main {
-  margin-top: 0.25em;
+  margin-top: 0em;
   display: grid;
   /* grid-template-rows: 1fr 1fr; */
   grid-template-columns: 1fr;
@@ -198,8 +206,8 @@ h1 {
 
 .services {
   grid-column: 1/3;
-  margin-top: 7em;
-  margin-bottom: 4em;
+  margin-top: 8em;
+  margin-bottom: 0em;
   font-family: var(--paragraph-font);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -230,6 +238,10 @@ h1 {
   max-width: 100%;
 }
 
+b {
+  font-weight: 600;
+}
+
 footer {
   padding: 1em;
   font-family: 'Jost', sans-serif;
@@ -237,11 +249,11 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
   border-top: #878C8F solid;
-  margin-top: 2em;
+  margin-top: 0em;
 }
 
 footer img {
-  max-width: 8em;
+  max-width: 7em;
 }
 
 footer p img {
@@ -279,11 +291,11 @@ footer p img {
 }
 
 .insta-icon img {
-  max-width: 50px;
+  max-width: 45px;
 }
 
 .face-icon img {
-  max-width: 50px;
+  max-width: 45px;
 }
 
 .copy-right {
@@ -293,6 +305,7 @@ footer p img {
   align-self: end;
   margin-top: 2em;
   margin-bottom: 0em;
+  font-size: 14px;
 }
 
 .contact-main {
@@ -332,6 +345,7 @@ footer p img {
     picture img {
       filter: blur(0px);
       -webkit-filter: blur(0px);
+      /* margin-bottom: 0em; */
     }
     footer {
       display: block;
@@ -339,9 +353,10 @@ footer p img {
     }
     .hair-images {
       display: block;
+      margin-top: 0em;
     }
     .hair-images img {
-      margin-bottom: 3em;
+      margin-bottom: 1em;
     }
     h1 {
       text-align: center;
@@ -359,6 +374,7 @@ footer p img {
     }
     .services {
       display: block;
+      margin-top: 1em;
     }
     .services h2 {
       text-align: center;

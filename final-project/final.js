@@ -1,3 +1,10 @@
+/*https://api.instagram.com/oauth/authorize
+  ?client_id=470666831882871
+  &redirect_uri=https://trenton15.github.io/wdd130/final-project/final.html
+  &scope=user_profile,user_media
+  &response_type=code*/
+
+
 // Render the header
 function headerTemplate() {
     return `<a href="/wdd130/final-project/final.html" class="logo"><img src="/wdd130/images/salon_logo_long2.png" alt="jana's salon logo"></a>`

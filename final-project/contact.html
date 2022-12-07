@@ -13,23 +13,25 @@
     <header></header>
     <nav></nav>
     <main class="contact-main">
-        <img class="contact-logo" src="/wdd130/images/salon_logo_icon2.png">
-        <h1 class="contact-header">Send a Message to Jana</h1>
-        <form class="contact">
-            <p class="name">
-                <p><label for="name">Name</label></p>
-                <p><input type="text" placeholder="Your Name" name="name" id="name" required /></p>
-            </p>
-            <p class="phone-number">
-                <p><label for="phonenumber">Your Phone Number</label></p>
-                <p><input type="number" placeholder="555-123-4567" name="phonenumber" id="phonenumber" required /></p>
-            </p>
-            <p class="message">
-                <p><label for="message">Message</label></p>
-                <p><input type="text" placeholder="Message here" name="message" id="message" required /></p>
-            </p>
-            <button class="send" type="submit">Send</button>
-        </form>
+        <div id="contact-content">
+            <img class="contact-logo" src="/wdd130/images/salon_logo_icon2.png">
+            <h1 class="contact-header">Send a Message to Jana</h1>
+            <form class="contact" onsubmit="callSMS">
+                <p class="name">
+                    <p><label for="name">Name</label></p>
+                    <p><input type="text" placeholder="Your Name" name="name" id="name" required /></p>
+                </p>
+                <p class="phone-number">
+                    <p><label for="phonenumber">Your Phone Number</label></p>
+                    <p><input type="number" placeholder="555-123-4567" name="phonenumber" id="phonenumber" required /></p>
+                </p>
+                <p class="message">
+                    <p><label for="message">Message</label></p>
+                    <p><input type="text" placeholder="Message here" name="message" id="message" required /></p>
+                </p>
+                <button class="send" type="submit">Send</button>
+            </form>
+        </div>
     </main>
     <footer></footer>
 </body>

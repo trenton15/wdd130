@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="final.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="final.js" defer ></script>
+    <script src="contact.js" defer ></script>
 </head>
 <body class="no-scroll">
     <header></header>
@@ -27,9 +28,11 @@
                 </p>
                 <p class="message">
                     <p><label for="message">Message</label></p>
-                    <p><input type="text" placeholder="Message here" name="message" id="message" required /></p>
+                    <p><textarea id="message" placeholder="Your Message"></textarea></p>
                 </p>
-                <button class="send" type="submit">Send</button>
+                <div class="center">
+                    <button class="send" type="submit" id="submit">Send</button>
+                </div>
             </form>
         </div>
     </main>

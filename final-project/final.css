@@ -391,6 +391,36 @@ footer p img {
   text-align: center;
 }
 
+.venmo-margin {
+  margin-top: 0em;
+  margin-bottom: 2em;
+  margin-right: 0em;
+  position: fixed;
+  right: -14.75em; bottom: 0px;
+  z-index: 999;
+}
+
+.venmo-button {
+  text-decoration: none;
+  background-color: #009cde;
+  color: white;
+  font-size: 25px;
+  border-radius: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: var(--paragraph-font);
+}
+
+.venmo-button:hover {
+  font-size: 30px;
+}
+
+.venmo-v {
+  width: 5%;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     .nav a:not(:first-child) {display: none;}
@@ -470,6 +500,14 @@ footer p img {
       height: 6em;
       width: 100%;
       font-size: 14px;
+    }
+    .venmo-margin {
+      right: -15.3em;
+    }
+    .venmo-button {
+      font-size: 20px;
+      padding-top: 0.6em;
+      padding-bottom: 0.6em;
     }
 }
 

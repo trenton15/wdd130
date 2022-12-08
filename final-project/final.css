@@ -459,16 +459,16 @@ footer p img {
       width: 90%;
     }
     #name {
-      height: 2em;
-      width: 22em;
+      height: 3em;
+      width: 100%;
     }
     #phonenumber {
-      height: 2em;
-      width: 22em;
+      height: 3em;
+      width: 100%;
     }
     #message {
-      height: 5em;
-      width: 21.25em;
+      height: 6em;
+      width: 100%;
       font-size: 14px;
     }
 }

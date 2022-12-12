@@ -484,6 +484,8 @@ footer p img {
     .schedule-h2 {
       margin-bottom: 2em;
       margin-top: -0.25em;
+      margin-left: 1em;
+      margin-right: 1em;
     }
     #contact-content {
       width: 90%;

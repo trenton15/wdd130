@@ -124,7 +124,7 @@ main {
 /* Banner animation */
 .banner {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
   
 }
 
@@ -149,8 +149,8 @@ main {
   z-index: 2;
   margin-top: 8em;
 
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
   text-decoration: none;
   text-align: center;
   font-size: 20px;
@@ -237,6 +237,7 @@ main {
   font-size: 18px;
   letter-spacing: 1px;
   font-family: var(--paragraph-font);
+  color: var(--accent2-color);
 }
 
 .card1 img {
@@ -285,16 +286,20 @@ footer p img {
 .phone {
   justify-self: center;
   align-self: center;
+  color: var(--accent2-color);
 }
 
 .email {
   justify-self: center;
   align-self: center;
+  color: var(--accent2-color);
 }
 
 .address {
   justify-self: center;
   align-self: center;
+  color: var(--accent2-color);
+
 }
 
 .insta-icon {
@@ -314,10 +319,12 @@ footer p img {
 
 .insta-icon img {
   max-width: 45px;
+  color: var(--accent2-color);
 }
 
 .face-icon img {
   max-width: 45px;
+  color: var(--accent2-color);
 }
 
 .copy-right {

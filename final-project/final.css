@@ -123,10 +123,27 @@ main {
 
 /* Banner animation */
 .banner {
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-  
+  overflow: hidden;
 }
+
+.banner img {
+  width: 100%;
+  height: auto;
+  animation: slideAnimation 3s 1; /* Set animation to run only once */
+}
+  
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 .headline {
   grid-row: 1/2;

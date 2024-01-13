@@ -78,6 +78,15 @@ function renderFooter() {
     element.innerHTML = html;
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    var bannerElement = document.getElementById("fadeInElement");
+  
+    // Trigger the fade-in effect after a short delay (e.g., 500 milliseconds)
+    setTimeout(function() {
+      bannerElement.classList.remove("banner");
+    }, 500);
+  });  
+
 renderNav();
 renderFooter();
 renderHeader();

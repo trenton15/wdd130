@@ -3,7 +3,7 @@
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #6D6875;
-  --secondary-color: #FFCDB2;
+  --secondary-color: #F3DBCE;
   --accent1-color: #B5838D;
   --accent2-color: white;
 
@@ -61,7 +61,7 @@ nav {
 .nav a {
   float: left;
   display: block;
-  color: var(--primary-color);
+  color: var(--accent2-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -128,6 +128,7 @@ main {
   justify-self: center;
   font-size: 2.5em;
   font-family: var(--paragraph-font);
+  font-weight: 300;
   margin-top: -1.5em;
   letter-spacing: 3px;
   /* margin-bottom: 0em; */

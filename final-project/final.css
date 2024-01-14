@@ -121,28 +121,20 @@ main {
   grid-template-columns: 1fr;
 }
 
-/* Banner animation */
 .banner {
-  overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
 }
 
-.banner img {
-  width: 100%;
-  height: auto;
-  animation: slideAnimation 3s 1; /* Set animation to run only once */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-  
-@keyframes slideAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+
 
 
 .headline {

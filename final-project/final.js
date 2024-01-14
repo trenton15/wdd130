@@ -76,16 +76,7 @@ function renderFooter() {
     const html = footerTemplate()
     // Insert html into element
     element.innerHTML = html;
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    var bannerElement = document.getElementById("fadeInElement");
-  
-    // Trigger the fade-in effect after a short delay (e.g., 1000 milliseconds)
-    setTimeout(function() {
-      bannerElement.classList.remove("banner");
-    }, 1000);
-  });  
+};
 
 renderNav();
 renderFooter();

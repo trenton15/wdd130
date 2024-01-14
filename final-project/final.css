@@ -203,6 +203,11 @@ main {
   margin-top: 2em;
 }
 
+.mission-statement {
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr
+}
+
 .mission-statement p {
   text-align: center;
   font-family: var(--paragraph-font);
@@ -241,6 +246,8 @@ main {
   margin: 50px auto;
   position: relative;
   overflow: hidden;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .review-card {

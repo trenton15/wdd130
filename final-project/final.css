@@ -117,9 +117,8 @@ picture img {
 
 main {
   margin-top: 0em;
-  display: grid;
+  display: block;
   /* grid-template-rows: 1fr 1fr; */
-  grid-template-columns: 1fr;
 }
 
 .banner {
@@ -251,7 +250,6 @@ main {
   margin: 50px auto;
   position: relative;
   overflow: hidden;
-  display: grid;
   display: block;
 }
 

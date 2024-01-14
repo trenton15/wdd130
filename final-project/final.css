@@ -204,7 +204,9 @@ main {
 }
 
 .mission-statement {
-  width: 100%;
+  align-self: center;
+  text-align: center;
+  display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
 }
@@ -243,12 +245,13 @@ main {
 }
 
 .review-carousel {
-  width: 100%;
+  justify-self: center;
+  align-self: center;
   margin: 50px auto;
   position: relative;
   overflow: hidden;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
+  display: grid;
+  display: block;
 }
 
 .review-card {
@@ -536,6 +539,9 @@ footer p img {
       display: block;
       text-align: center;
     }
+    .mission-statement {
+      display: block;
+    }
     .hair-images {
       display: block;
       margin-top: 0em;
@@ -556,6 +562,9 @@ footer p img {
     }
     .background {
       display: none;
+    }
+    .review-carousel{
+      display: block;
     }
     .services {
       display: block;

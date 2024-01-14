@@ -36,7 +36,7 @@ html, body {
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--accent2-color);
   margin: 0em;
 }
 
@@ -200,6 +200,14 @@ main {
   justify-self: center;
   align-self: center;
   margin-top: 2em;
+}
+
+.mission-statement {
+  text-align: center;
+  margin: 0 20%;
+  background: linear-gradient(to right, #ffffff, #dddddd);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .hair-images {

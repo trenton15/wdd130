@@ -124,7 +124,7 @@ main {
 
 .banner {
   opacity: 0;
-  transform: scale(2); /* Initial scale (adjust as needed) */
+  transform: scale(1.5); /* Initial scale (adjust as needed) */
   animation: fadeInAndZoom 2s ease-in-out forwards; /* Added 'forwards' to keep the final state */
   position: relative;
   display: inline-block; /* Ensures the container size matches the image size */
@@ -133,7 +133,7 @@ main {
 @keyframes fadeInAndZoom {
   from {
       opacity: 0;
-      transform: scale(2); /* Initial scale (adjust as needed) */
+      transform: scale(1.5); /* Initial scale (adjust as needed) */
   }
   to {
       opacity: 1;
@@ -145,7 +145,7 @@ main {
   display: block; /* Removes extra space below the image */
   max-width: 100%; /* Ensures the image doesn't exceed its container */
   height: auto; /* Maintains the aspect ratio */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Light shadow */
 }
 
 .headline {
@@ -205,7 +205,7 @@ main {
 
 .mission-statement {
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .mission-statement p {
@@ -346,7 +346,6 @@ footer {
   font-size: large;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
-  border-top: #878C8F solid;
   margin-top: 0em;
 }
 

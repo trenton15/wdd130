@@ -122,20 +122,30 @@ main {
 }
 
 .banner {
-    opacity: 0;
-    animation: fadeIn 3s ease-in-out forwards;
+  opacity: 0;
+  transform: scale(0.8); /* Initial scale (adjust as needed) */
+  animation: fadeInAndZoom 2s ease-in-out forwards; /* Added 'forwards' to keep the final state */
+  position: relative;
+  display: inline-block; /* Ensures the container size matches the image size */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+@keyframes fadeInAndZoom {
+  from {
+      opacity: 0;
+      transform: scale(0.8); /* Initial scale (adjust as needed) */
+  }
+  to {
+      opacity: 1;
+      transform: scale(1); /* Final scale (1 is the original size) */
+  }
 }
 
-
+.banner img {
+  display: block; /* Removes extra space below the image */
+  max-width: 100%; /* Ensures the image doesn't exceed its container */
+  height: auto; /* Maintains the aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
 
 .headline {
   grid-row: 1/2;

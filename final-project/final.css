@@ -203,13 +203,7 @@ main {
   margin-top: 2em;
 }
 
-.mission-statement {
-  background: linear-gradient(to right, #ffffff, #dddddd);
-}
-
 .mission-statement p {
-  margin: 0 20%;
-  padding: 20px;
   text-align: center;
   font-family: var(--paragraph-font);
   font-weight: 200;
@@ -240,6 +234,48 @@ main {
   grid-row: 2/3;
   justify-self: center;
   align-self: start;
+}
+
+.review-carousel {
+  width: 70%;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.review-card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: none;
+}
+
+.review-card h3 {
+  color: #ffc107; /* Yellow color for stars */
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
 }
 
 .services {

@@ -76,8 +76,29 @@ function renderFooter() {
     const html = footerTemplate()
     // Insert html into element
     element.innerHTML = html;
-};
+}
 
+let currentReview = 0;
+const reviewCards = document.querySelectorAll('.review-card');
+
+function showReview(index) {
+    reviewCards.forEach((card, i) => {
+        card.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+function nextReview() {
+    currentReview = (currentReview + 1) % reviewCards.length;
+    showReview(currentReview);
+}
+
+function prevReview() {
+    currentReview = (currentReview - 1 + reviewCards.length) % reviewCards.length;
+    showReview(currentReview);
+}
+
+// Show the first review initially
+showReview(currentReview);
 renderNav();
 renderFooter();
 renderHeader();

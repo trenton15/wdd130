@@ -123,7 +123,7 @@ main {
 
 .banner {
   opacity: 0;
-  transform: scale(0.8); /* Initial scale (adjust as needed) */
+  transform: scale(2); /* Initial scale (adjust as needed) */
   animation: fadeInAndZoom 2s ease-in-out forwards; /* Added 'forwards' to keep the final state */
   position: relative;
   display: inline-block; /* Ensures the container size matches the image size */
@@ -132,7 +132,7 @@ main {
 @keyframes fadeInAndZoom {
   from {
       opacity: 0;
-      transform: scale(0.8); /* Initial scale (adjust as needed) */
+      transform: scale(2); /* Initial scale (adjust as needed) */
   }
   to {
       opacity: 1;
@@ -203,11 +203,13 @@ main {
 }
 
 .mission-statement {
-  text-align: center;
-  margin: 0 20%;
   background: linear-gradient(to right, #ffffff, #dddddd);
+}
+
+.mission-statement p {
+  margin: 0 20%;
   padding: 20px;
-  border-radius: 10px;
+  text-align: center;
 }
 
 .hair-images {

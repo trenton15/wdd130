@@ -45,56 +45,42 @@ head{
   margin: 0em;
 }
 
-nav {
+header {
   position: sticky;
   top: 0;
   z-index: 999;
 }
 
-/* Add a black background color to the top navigation */
-.nav {
-    background-color: var(--primary-color);
-    overflow: hidden;
-    font-family: var(--heading-font);
+.navbar {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
-/* Style the links inside the navigation bar */
-.nav a {
-  float: left;
-  display: block;
-  color: var(--accent2-color);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-/* Change the color of links on hover */
-.nav a:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* Add an active class to highlight the current page*/
-.nav a.active {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-/* Hide the link that should open and close the topnav on small screens*/
-.nav .icon {
-  display: none;
-}
-
-header a{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.logo {
+  margin-left: 40px;
 }
 
 .logo img {
-  width: 60%;
-  grid-column: 2/3;
-  justify-self: center;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  height: 50px; /* Adjust height as needed */
+}
+
+.nav-links {
+  display: flex;
+  margin-right: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 0 50px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff7f50; /* Change color on hover */
 }
 
 main div {
@@ -612,17 +598,47 @@ footer p img {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .nav.responsive {position: relative;}
-  .nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .nav.responsive a {
-    float: none;
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding-right: 0;
+    margin: 0;
+}
+
+.nav-links {
+    padding-left: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-links a {
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.logo img,
+.nav-links a {
     display: block;
-    text-align: left;
-  }
+    width: 100%;
+    text-align: center;
+}
+
+.mission-statement {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hair-images {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.review-carousel {
+  display: block;
+}
+
 }
 
 /* When the screen is above 601px */

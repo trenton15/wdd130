@@ -22,14 +22,14 @@ function renderHeader() {
 // Render the navigation bar
 function navTemplate() {
     return `
-    <div class="nav" id="topNav">
-        <a href="/wdd130/final-project/final.html">Home</a>
-        <a href="/wdd130/final-project/schedule.html" class="schedule">Schedule</a>
-        <a href="/wdd130/final-project/contact.html">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="addResponsive()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>`
+        <div class="logo">
+            <a href="/wdd130/final-project/final.html"><img src="/wdd130/images/salon_logo_long2.png" alt="jana's salon logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="/wdd130/final-project/final.html">Home</a>
+            <a href="/wdd130/final-project/schedule.html" class="schedule">Schedule</a>
+            <a href="/wdd130/final-project/contact.html">Contact</a>
+        </div>`
 }
 
 function renderNav() {
@@ -101,4 +101,4 @@ function prevReview() {
 showReview(currentReview);
 renderNav();
 renderFooter();
-renderHeader();
+/*renderHeader();*/

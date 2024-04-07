@@ -32,6 +32,31 @@ function navTemplate() {
         </div>`
 }
 
+// Store the current scroll position
+let lastScrollTop = 0;
+
+// Function to handle scroll event
+function handleScroll() {
+    const navbar = document.querySelector('.navbar');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Check if user is scrolling up or down
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.classList.add('hide-navbar'); // Add class to hide the navbar
+    } else {
+        // Scrolling up
+        navbar.classList.remove('hide-navbar'); // Remove class to show the navbar
+        navbar.classList.add('show-navbar'); // Add class to show the navbar
+    }
+
+    // Update the scroll position
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+}
+
+// Add scroll event listener
+window.addEventListener('scroll', handleScroll);
+
 function renderNav() {
     // Get element
     const element = document.querySelector('nav');
